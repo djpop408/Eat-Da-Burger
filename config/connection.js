@@ -18,9 +18,11 @@ connection = mysql.createConnection({
 };
 
 // testing the connection
-connection.connect(function(err){
-  if(err)throw err;
-  console.log("connected as id: " + connection.threadId);
-});
+// connection.connect(function(err){
+//   if(err)throw err;
+//   console.log("connected as id: " + connection.threadId);
+// });
+
+connection.connect();
 
 module.exports = connection;
