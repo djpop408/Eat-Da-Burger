@@ -8,5 +8,4 @@ Burger consumption logger with MySQL, Node, Express, Handlebars and a homemade O
 - Your app will store every burger in a database, whether devoured or not.
 
 ## Demo
-
-
+https://eat-da-burger408.herokuapp.com/
