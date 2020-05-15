@@ -1,0 +1,8 @@
+::1 - - [15/May/2020:07:14:25 +0000] "GET / HTTP/1.1" 200 4414 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"
+::1 - - [15/May/2020:07:14:25 +0000] "GET /css/style.css HTTP/1.1" 404 152 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"
+::1 - - [15/May/2020:07:14:28 +0000] "PUT /burgers/update?_method=PUT HTTP/1.1" 302 46 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"
+::1 - - [15/May/2020:07:14:28 +0000] "GET / HTTP/1.1" 200 4116 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"
+::1 - - [15/May/2020:07:14:28 +0000] "GET /css/style.css HTTP/1.1" 404 152 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"
+::1 - - [15/May/2020:07:14:39 +0000] "POST /burgers/create HTTP/1.1" 302 46 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"
+::1 - - [15/May/2020:07:14:39 +0000] "GET / HTTP/1.1" 200 4535 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"
+::1 - - [15/May/2020:07:14:39 +0000] "GET /css/style.css HTTP/1.1" 404 152 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"
