@@ -6,7 +6,7 @@ var connection;
 
 // connection to the DB
 if(process.env.JAWSDB_URL){
-  connection=mysql.createConnection(process.env.JAWSDB_URL);
+  connection=mysql.createConnection('mysql://m045vh8vsqb8p4qq:x6s1hiqjk9l7uuba@qn66usrj1lwdk1cc.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/is96vf1svwq4k7y7');
 } else {  
 connection = mysql.createConnection({
     host: process.env.DB_HOST,
