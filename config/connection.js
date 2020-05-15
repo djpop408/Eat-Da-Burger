@@ -1,29 +1,27 @@
-// Mysql data connection
-
 var mysql = require('mysql');
-require('dotenv').config();
-var connection; 
 
-// connection to the DB
-if(process.env.JAWSDB_URL){
-  connection=mysql.createConnection('process.env.JAWSDB_URL');
-} else {  
-connection = mysql.createConnection({
-    host: process.env.DB_HOST,
-    port: 3306,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASS,
-    database: 'burgers_db'
-  });
-};
+// For jawsDB
+var connection;
+if (process.env.JAWSDB_URL) {
+    // DB is JawsDB on Heroku
+    connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+    // DB is local on localhost
+    connection = mysql.createConnection({
+        port: 3306,
+        host: 'localhost',
+        user: 'root',
+        password: 'tatert0ts',
+        database: 'burgers_db'
+    });
+}
 
 connection.connect(function(err) {
-  if (err) {
-      console.error('error connecting: ' + err.stack);
-      return;
-  }
-  console.log('connected as id ' + connection.threadId);
+    if (err) {
+        console.error('error connecting: ' + err.stack);
+        return;
+    }
+    console.log('connected as id ' + connection.threadId);
 });
-
 
 module.exports = connection;
